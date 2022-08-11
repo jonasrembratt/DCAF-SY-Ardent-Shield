@@ -1,0 +1,7 @@
+sy_iads1 = SkynetIADS:create('Syrian IADS 1')
+sy_iads1:addSAMSitesByPrefix("SY_42_adbgd-1")
+sy_iads1:addEarlyWarningRadarsByPrefix("SY_42_adbgd-EW-1")
+local cc1 = StaticObject.getByName("Static SY_42_adbgd-1-CMD")
+BASE:E(cc1)
+--sy_iads1:addCommandCenter(cc1)
+sy_iads1:activate()
